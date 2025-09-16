@@ -56,7 +56,6 @@ services:
       - SERVER_COUNTRIES=Country
       - FIREWALL_VPN_INPUT_PORTS=XXXX
     ports:
-      - 32400:32400   # Plex
       - 9080:8080     # qBittorrent WebUI
       - 7878:7878     # Radarr
       - 8989:8989     # Sonarr
