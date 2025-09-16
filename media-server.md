@@ -67,24 +67,6 @@ services:
       - 56881:6881/udp# Torrent UDP
     restart: unless-stopped
 
-  # PLEX MEDIA SERVER
-  plex:
-    image: lscr.io/linuxserver/plex:latest
-    container_name: plex
-    network_mode: "service:gluetun"
-    environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=Etc/UTC
-    volumes:
-      - /docker/plex/config:/config
-      - /mnt/movies:/movies
-      - /mnt/tv:/tv
-      - /mnt/music:/music
-    depends_on:
-      - gluetun
-    restart: unless-stopped
-
   # RADARR
   radarr:
     image: lscr.io/linuxserver/radarr:latest
