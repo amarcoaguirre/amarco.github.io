@@ -10,6 +10,9 @@
 ---
 
 ## VLAN Configuration Table
+
+<div style="overflow-x:auto;">
+
 | VLAN | Name     | Purpose                        | Access Rules                                  |
 |------|----------|-------------------------------|----------------------------------------------|
 | 10   | IoT      | Cameras, smart devices         | Isolated; no access except Admin (20)         |
@@ -19,6 +22,8 @@
 | 40   | Media    | Plex, Servarr stack, TrueNAS    | Isolated except Admin (20)                    |
 | 50   | Guest    | Guest WiFi                      | Internet only, no inter-VLAN                  |
 | 60   | Lab      | Windows Server 2022, Azure Labs | Isolated except Admin (20)                    |
+
+</div>
 
 ---
 
